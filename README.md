@@ -1,22 +1,39 @@
-# 🖱️ Virtual Mouse using Hand Gestures
+# Virtual Mouse Using Hand Gestures 🖐️🖱️
 
-This project enables users to control the mouse using hand gestures through a webcam. 
-Built using Python, OpenCV, and Mediapipe, it allows real-time gesture-based interactions like cursor movement, clicking, dragging, scrolling, and taking screenshots
-— all with your hand!
+A computer vision–based system that allows users to control mouse operations using hand gestures captured via a webcam. This project eliminates the need for physical mouse devices.
 
-## 🚀 Features
+---
 
-- ✅ Move mouse pointer with your **index finger**
-- 🖱️ **Click** by touching **index finger** and **thumb**
-- 📂 **Drag and drop** by holding index and thumb together
-- 🔃 **Scroll** by raising index and middle fingers
-- 📸 Take a **screenshot** when all 4 fingers are up
+## ✨ Features
+
+- Move cursor using hand movements  
+- Left & right click using gestures  
+- Drag and drop functionality  
+- Scroll up and down  
+- Take screenshots  
+- Real-time gesture recognition  
+
+---
 
 ## 🛠️ Tech Stack
 
-- Python 3.7+
-- OpenCV
-- MediaPipe
-- PyAutoGUI
-- NumPy
+- **Language:** Python 3.7+  
+- **Libraries:** OpenCV, MediaPipe, NumPy, PyAutoGUI  
+- **Hardware:** Webcam  
 
+---
+
+## ⚙️ How It Works
+
+1. Captures real-time video from webcam  
+2. Detects hand landmarks using MediaPipe  
+3. Maps hand gestures to mouse actions  
+4. Executes mouse operations using PyAutoGUI  
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install opencv-python mediapipe pyautogui numpy
+python virtual_mouse.py
